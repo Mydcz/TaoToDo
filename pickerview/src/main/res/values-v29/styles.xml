@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="custom_dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        //修改状态栏为透明
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        //修改导航栏为非半透明
+        <item name="android:windowTranslucentNavigation">false</item>
+        //修改导航栏忽略对比度不够的问题
+        <item name="android:enforceNavigationBarContrast">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.25</item>
+
+    </style>
+</resources>

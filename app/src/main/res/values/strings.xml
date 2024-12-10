@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="yyyy_mm_dd">yyyy/MM/dd</string>
+    <string name="setting_manager">设置管理</string>
+    <string name="add_task">新增任务</string>
+    <string name="category_manager">分类管理</string>
+    <string name="completed_sift">状态筛选</string>
+    <string name="category_sift">分类筛选</string>
+    <string name="task_list">任务列表</string>
+    <string name="search">请输入过滤条件</string>
+    <string name="finish_task">完成</string>
+    <string name="title">标题：</string>
+    <string name="input_title">请输入任务标题</string>
+    <string name="description">描述：</string>
+    <string name="input_description">请输入任务描述</string>
+    <string name="category">分类：</string>
+    <string name="please_select_category">请选择分类</string>
+    <string name="due_date">截止日期：</string>
+    <string name="please_select_due_date">请选择日期</string>
+    <string name="completed">完成状态：</string>
+    <string name="please_select_completed">请选择完成状态</string>
+    <string name="add">新增</string>
+    <string name="category1">分类</string>
+    <string name="data">日期</string>
+    <string name="cancel">取消</string>
+    <string name="submit">确认</string>
+    <string name="add_category">请添加分类</string>
+    <string name="add_succeed">添加成功</string>
+    <string name="done">已完成</string>
+    <string name="ongoing">进行中</string>
+    <string name="edit">编辑</string>
+    <string name="edit_succeed">编辑成功</string>
+    <string name="tips">提示</string>
+    <string name="delete_task">确定删除该任务吗？</string>
+    <string name="category_list">分类列表</string>
+    <string name="delete_category">确定删除该分类？</string>
+    <string name="delete_category_task">确定删除该分类，分类相关任务？</string>
+    <string name="name">名称：</string>
+    <string name="input_name">请输入分类名称</string>
+    <string name="color">颜色：</string>
+    <string name="input_color">请输入分类颜色</string>
+
+</resources>

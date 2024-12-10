@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitleView">
+        <attr name="drawableLeft" format="reference" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+
+    <style name="PopupWindowAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+    <declare-styleable name="LoopView">
+        <attr format="integer" name="awv_textsize"/>
+        <attr format="integer" name="awv_outerTextSize"/>
+        <attr format="float" name="awv_lineSpace"/>
+        <attr format="integer" name="awv_centerTextColor"/>
+        <attr format="integer" name="awv_outerTextColor"/>
+        <attr format="integer" name="awv_dividerTextColor"/>
+        <attr format="integer" name="awv_itemsVisibleCount"/>
+        <attr format="boolean" name="awv_isLoop"/>
+        <attr format="boolean" name="awv_isCurve"/>
+        <attr format="integer" name="awv_initialPosition"/>
+        <attr format="float" name="awv_scaleX"/>
+    </declare-styleable>
+
+    <style name="BottomDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.25</item>
+        <item name="android:windowAnimationStyle">@style/dialog_animation</item>
+    </style>
+
+    <style name="dialog_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="loadingDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.1</item>
+        <item name="android:windowAnimationStyle">@style/dialog_animation</item>
+    </style>
+</resources>

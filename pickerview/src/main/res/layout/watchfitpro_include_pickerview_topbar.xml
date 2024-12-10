@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_topbar"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_main_button"
+            android:gravity="center"
+            android:singleLine="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/pickerview_cancel"
+            android:textColor="#FF000000"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_button"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/pickerview_submit"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>
