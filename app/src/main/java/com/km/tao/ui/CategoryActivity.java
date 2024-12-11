@@ -71,8 +71,8 @@ public class CategoryActivity extends BaseActivity<ActivityCategoryBinding> {
             showActivity(AddCategoryActivity.class);
         });
 
-        adapter.setDeleteListener((categoryBean, position) -> delete(categoryBean));
-        adapter.setDeleteLongListener((categoryBean, position) -> deleteCategoryAndTask(categoryBean));
+        adapter.setDeleteListener((categoryBean, position) -> delete(categoryBean,false));
+        adapter.setDeleteLongListener((categoryBean, position) -> delete(categoryBean,true));
 
     }
 
@@ -89,7 +89,7 @@ public class CategoryActivity extends BaseActivity<ActivityCategoryBinding> {
      *
      * @param categoryBean
      */
-    private void deleteCategoryAndTask(CategoryBean categoryBean, boolean isLong) {
+    private void delete(CategoryBean categoryBean, boolean isLong) {
         tipsView = getLayoutInflater().inflate(R.layout.view_tips, null);
         AppCompatTextView tipsTv = tipsView.findViewById(R.id.tips_tv);
         if (isLong) {

@@ -57,7 +57,7 @@ public class NewTaskAdapter extends RecyclerView.Adapter<NewTaskAdapter.ViewHold
             holder.completedTypeTv.setTextColor(mContext.getResources().getColor(R.color.color_main));
         } else {
             holder.completedTypeTv.setText(mContext.getString(R.string.ongoing));
-            holder.completedTypeTv.setTextColor(mContext.getResources().getColor(R.color.color_F8B5B5));
+            holder.completedTypeTv.setTextColor(mContext.getResources().getColor(R.color.color_FA6F7C));
         }
 
         holder.taskItemCl.setOnClickListener(v -> {

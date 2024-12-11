@@ -73,7 +73,7 @@
         android:id="@+id/finish_task_cl"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:background="@color/color_E1FAF6">
+        android:background="@color/color_7CABFA">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="30dp"
@@ -90,7 +90,7 @@
         android:id="@+id/edit_cl"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:background="@color/color_B3F8EE">
+        android:background="@color/color_5A8FFA">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="30dp"
@@ -107,7 +107,7 @@
         android:id="@+id/delete_cl"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:background="@color/color_F8B5B5">
+        android:background="@color/color_FA6F7C">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="30dp"

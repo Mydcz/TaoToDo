@@ -4,7 +4,6 @@ import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.km.db.bean.CategoryBean;
 import com.km.db.bean.TaskBean;
 
 import java.util.List;
@@ -38,7 +37,6 @@ public interface TaskDao {
 
     @Query("select * from Task where isCompleted =:isCompleted")
     Flowable<List<TaskBean>> findByIsCompletedFlowable(boolean isCompleted);
-
 
 
     //模糊查询

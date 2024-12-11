@@ -59,7 +59,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
             holder.finishTaskCl.setVisibility(View.GONE);
         } else {
             holder.completedTypeTv.setText(mContext.getString(R.string.ongoing));
-            holder.completedTypeTv.setTextColor(mContext.getResources().getColor(R.color.color_F8B5B5));
+            holder.completedTypeTv.setTextColor(mContext.getResources().getColor(R.color.color_FA6F7C));
             holder.finishTaskCl.setVisibility(View.VISIBLE);
         }
         holder.finishTaskCl.setOnClickListener(v -> {

@@ -5,7 +5,6 @@ import androidx.room.Insert;
 import androidx.room.Query;
 
 import com.km.db.bean.CategoryBean;
-
 import java.util.List;
 import io.reactivex.rxjava3.core.Flowable;
 
