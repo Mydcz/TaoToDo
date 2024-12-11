@@ -101,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void forTest() {
         pocketSphinxUtil = PocketSphinxUtil.get();
+
+        
         if (pocketSphinxUtil == null) {
             return;
         }
