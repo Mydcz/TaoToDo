@@ -64,5 +64,17 @@ kernel是进行数据操作与UI交互的中间层，主要作用是对db进行�
 pickerview是一个第三方自定义控件module，主要用于时间选择器
 [项目地址](https://github.com/Bigkoo/Android-PickerView.git)
 
+## demo目录
+demo是一个测试module
+
+## pocketsphinx目录
+pocketsphinx是一个语音识别module，pocketsphinx是一个开源的语音识别引擎，可以用于语音识别，语音合成（待研究）等功能
+参考地址：[pocketsphinx 1 ](https://github.com/crystalyf/PocketSphinx)
+        [pocketsphinx 2 ](https://github.com/cmusphinx/pocketsphinx-android-demo)
+        [pocketsphinx 3 ](https://github.com/cmusphinx/pocketsphinx-android)
+        [pocketsphinx 4 ](https://github.com/eson-yunfei/PocketSphinxDemo)
+
+
+
 # 总结
 项目采用的是组件化开发，将APP的主要模块进行拆分，分别放在不同的module中，通过kernel进行组合。kernel中进行数据操作，采用的是MVVM架构模式，通过viewmodel处理数据，并将数据传递给UI展示。数据同步UI使用的是LiveData,UI绑定使用的是viewBinding
