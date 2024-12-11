@@ -78,17 +78,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         mBinding.recyclerView.setLayoutManager(linearLayoutManager);
         mBinding.recyclerView.setAdapter(adapter);
 
-//        mCategoryViewModel.insert("等级1", "FFFAE4E4");
-//        mCategoryViewModel.insert("等级2", "FFF4CDCD");
-//        mCategoryViewModel.insert("等级3", "FFF8ADAD");
-//        mCategoryViewModel.insert("等级4", "FFF69090");
-//        mCategoryViewModel.insert("等级5", "FFF46E6E");
-//        mTaskViewModel.insert("title0", "description0", System.currentTimeMillis(), 1);
-//        mTaskViewModel.insert("title1", "description1", System.currentTimeMillis(), 2);
-//        mTaskViewModel.insert("title2", "description2", System.currentTimeMillis(), 3);
-//        mTaskViewModel.insert("title3", "description3", System.currentTimeMillis(), 4);
-//        mTaskViewModel.insert("title4", "description4", System.currentTimeMillis(), 5);
-
         mTaskViewModel.findAll();
         mCategoryViewModel.findAll();
 
@@ -221,6 +210,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         mBinding.editLl.setVisibility(View.GONE);
         mBinding.titleView.setSearchBox(View.GONE);
         mTaskViewModel.findAll();
+
     }
 
     //menu方法

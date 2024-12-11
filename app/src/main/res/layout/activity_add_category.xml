@@ -48,27 +48,39 @@
                 android:text="@string/name"
                 android:textSize="18sp" />
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/name_tv"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:background="@null"
-                android:hint="@string/input_name"
-                android:inputType="text"
-                android:maxLength="24"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:textColor="@color/color_333333"
-                android:textCursorDrawable="@color/color_main"
-                android:textSize="16sp" />
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_999999_frame_corner12"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:hint="@string/input_name"
+                    android:inputType="text"
+                    android:maxLength="24"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textCursorDrawable="@color/color_main"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
             android:layout_marginTop="5dp">
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -77,22 +89,31 @@
                 android:text="@string/color"
                 android:textSize="18sp" />
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/color_tv"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:background="@null"
-                android:gravity="start|top"
-                android:hint="@string/input_color"
-                android:inputType="text"
-                android:maxLength="24"
-                android:maxLines="1"
-                android:padding="5dp"
-                android:singleLine="true"
-                android:textColor="@color/color_333333"
-                android:textCursorDrawable="@color/color_main"
-                android:textSize="16sp" />
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_999999_frame_corner12"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/color_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@null"
+                    android:gravity="start|top"
+                    android:hint="@string/input_color"
+                    android:inputType="text"
+                    android:maxLength="24"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textCursorDrawable="@color/color_main"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

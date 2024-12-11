@@ -125,7 +125,7 @@ public class NewMainActivity extends BaseActivity<ActivityMainBinding> {
             if (dueDate > 0) {//有截止日期
                 mBinding.editDueDateTv.setText(DateUtils.formatTime(dueDate, getString(R.string.yyyy_mm_dd)));
             }else{
-                mBinding.editCategoryTv.setText(getString(R.string.please_select_due_date));
+                mBinding.editDueDateTv.setText(getString(R.string.please_select_due_date));
             }
             mBinding.editDone.setChecked(taskBean.isCompleted());
             mBinding.editToBeContinued.setChecked(!taskBean.isCompleted());
@@ -378,7 +378,5 @@ public class NewMainActivity extends BaseActivity<ActivityMainBinding> {
             mTaskViewModel.findByCategoryId(categoryId);
         });
         alertDialog.show();
-
-
     }
 }
