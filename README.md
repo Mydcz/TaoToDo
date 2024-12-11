@@ -65,4 +65,4 @@ pickerview是一个第三方自定义控件module，主要用于时间选择器
 [项目地址](https://github.com/Bigkoo/Android-PickerView.git)
 
 # 总结
-项目采用的是组件化开发，将APP的主要模块进行拆分，分别放在不同的module中，通过kernel进行组合。kernel中进行数据操作，采用的是MVVM架构模式，通过viewmodel处理数据，并将数据传递给UI展示。
+项目采用的是组件化开发，将APP的主要模块进行拆分，分别放在不同的module中，通过kernel进行组合。kernel中进行数据操作，采用的是MVVM架构模式，通过viewmodel处理数据，并将数据传递给UI展示。数据同步UI使用的是LiveData,UI绑定使用的是viewBinding
